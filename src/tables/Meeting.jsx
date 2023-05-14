@@ -53,7 +53,7 @@ function Meet() {
             user_id: auth.currentUser.uid,
             email: auth.currentUser.email,
             details: `Meeting set for ${date} at ${time} to join. Copy link on new tab: ${url} .`,
-            url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa6lXSHpYCvxew31ZWQ5gehsSXxj2w2ddJ-g&usqp=CAU",
+            url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2z7Pci22-XfJWvMLXeQ2VFYMOfIURf4cwwA&usqp=CAU",
             created: Timestamp.now() 
         })
 

@@ -25,7 +25,7 @@ export default[{
   email: 'admin@gmail.com',
   department: 'Manager',
   salary: '1000000',
-  imageId: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGyq2bMtBbRDoABr2Glnx6pST2BNJ1OnTDXQ&usqp=CAU'
+  imageId: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2z7Pci22-XfJWvMLXeQ2VFYMOfIURf4cwwA&usqp=CAU'
 }];
 
 

@@ -1,7 +1,7 @@
 import { Article} from '@/components/article'
 import { Layout } from '@/components/layout'
 import React, { useState } from 'react';
-import Clock from '../tables/Clock';
+import picture from '../assets/images/empty1.png'
 
 //Calendar
 // import { LocalizationProvider } from '@mui/x-date-pickers';
@@ -18,7 +18,10 @@ import {
   MDBTabsContent,
   MDBTabsPane,
   MDBRow,
-  MDBCol
+  MDBCol,
+
+  MDBCard,
+  MDBCardBody,
 } from 'mdb-react-ui-kit';
 
 import Tasks from '../tables/Tasks'
@@ -57,12 +60,16 @@ export default function Account() {
               marginLeft: 100,
             }}
           >
+
+
           
         <MDBRow>
         <MDBCol size='3'>
+        <MDBCard  style={{width: '260px', marginLeft: '-30px'}}>
+        <MDBCardBody>
           <div className='flex-row'>
           <img
-                    src= 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGyq2bMtBbRDoABr2Glnx6pST2BNJ1OnTDXQ&usqp=CAU'
+                    src= 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2z7Pci22-XfJWvMLXeQ2VFYMOfIURf4cwwA&usqp=CAU'
                     alt="Default user icon"
                     style={{
                         cursor: 'pointer',
@@ -72,7 +79,9 @@ export default function Account() {
                     }}
                     />
            <p style={{marginTop: '-30px'}}> Admin</p></div>
-          <MDBTabs className='flex-column text-center mt-3 '>
+
+          
+          <MDBTabs className='flex-column text-center mt-5' style={{marginLeft: '-10px'}}>
           
             <MDBTabsItem>
            
@@ -97,6 +106,10 @@ export default function Account() {
             </MDBTabsItem>
             
           </MDBTabs>
+          
+          </MDBCardBody>
+          </MDBCard>
+
 
           {/* <Clock /> */}
 

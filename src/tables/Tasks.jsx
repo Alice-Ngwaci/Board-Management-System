@@ -135,8 +135,8 @@ export default function Tasks() {
               {people.map((person) => (
               <>
   
-                <MDBIcon  fas icon="folder" className="me-5 mt-3 ml-5 " key = {person.id} size="2x" style={{cursor: 'pointer'}}  onClick={() => handleRowClick(person)}>
-                <p>{person.id}</p>__________
+                <MDBIcon  fas icon="folder" className="me-5 mt-3  " key = {person.id} size="2x" style={{cursor: 'pointer'}}  onClick={() => handleRowClick(person)}>
+                <p>{person.id}</p>_______
                 </MDBIcon>
   
               </>
