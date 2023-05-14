@@ -47,8 +47,6 @@ export default function App() {
       <ScrollToTop>
         <Routes>
        
-       
-
         {!user ? (
 
         <>

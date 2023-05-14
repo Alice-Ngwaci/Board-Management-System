@@ -6,7 +6,6 @@ import {
 
   MDBIcon,
 
-
   MDBContainer,
   MDBCard,
   MDBCardBody,
@@ -53,11 +52,9 @@ export default function Tasks() {
     setAlert({ show, type, icon, msg })
     }
      
-   
     //Global Context
 
     const { assignTask } = useGlobalContext()
-
 
     //Modal
     
@@ -93,7 +90,7 @@ export default function Tasks() {
 
     //Assign Task
 
-    const number = Math.floor(Math.random() * 100);
+    const number = Math.floor(Math.random() * 100000000);
 
     const Start = () =>{
 
@@ -117,8 +114,6 @@ export default function Tasks() {
        
         setTimeout(() => {!toggleShow3()}, 2000)
 
-        
-
       }
 
     }
@@ -137,13 +132,11 @@ export default function Tasks() {
                 <span className="p fw-bold mt-2">MHASIBU SACCO</span>
               </div>
 
-            
-
               {people.map((person) => (
               <>
-              
-                <MDBIcon  fas icon="folder" className="me-5 mt-3 ml-3 " key = {person.id} size="2x" style={{cursor: 'pointer'}}  onClick={() => handleRowClick(person)}>
-                <p>{person.id}</p>_______
+  
+                <MDBIcon  fas icon="folder" className="me-5 mt-3 ml-5 " key = {person.id} size="2x" style={{cursor: 'pointer'}}  onClick={() => handleRowClick(person)}>
+                <p>{person.id}</p>__________
                 </MDBIcon>
   
               </>
@@ -156,10 +149,8 @@ export default function Tasks() {
       </MDBCard>
 
       </MDBContainer>
-        
-       
 
-        {/* Request Modal */}
+    {/* Request Modal */}
 
     <>
     {selectedItem && (
@@ -211,7 +202,6 @@ export default function Tasks() {
                 Title: {selectedItem.title}
               </h5>
 
-             
               <h5
                 className="fw-normal  mb-4"
                 style={{ letterSpacing: '1px' }}
@@ -220,7 +210,6 @@ export default function Tasks() {
               </h5>
 
               <Select
-              
               defaultValue={selectedOption}
               onChange={setSelectedOption}
               options={options}

@@ -73,24 +73,26 @@ export default function Account() {
                     />
            <p style={{marginTop: '-30px'}}> Admin</p></div>
           <MDBTabs className='flex-column text-center mt-3 '>
+          
             <MDBTabsItem>
+           
               <MDBTabsLink onClick={() => handleVerticalClick('tab1')} active={verticalActive === 'tab1'}>
-                Task Management
+              <MDBIcon fas icon="folder" className="me-3" /> Task Management
               </MDBTabsLink>
             </MDBTabsItem>
             <MDBTabsItem>
               <MDBTabsLink onClick={() => handleVerticalClick('tab2')} active={verticalActive === 'tab2'}>
-               Setup Meetings
+              <MDBIcon fas icon="handshake" className="me-3" />  Setup Meetings
               </MDBTabsLink>
             </MDBTabsItem>
             <MDBTabsItem>
               <MDBTabsLink onClick={() => handleVerticalClick('tab3')} active={verticalActive === 'tab3'}>
-                Sacco Growth
+              <MDBIcon fas icon="chart-pie" className="me-3" />  Report & Analysis
               </MDBTabsLink>
             </MDBTabsItem>
             <MDBTabsItem>
               <MDBTabsLink onClick={() => handleVerticalClick('tab4')} active={verticalActive === 'tab4'}>
-                Register New Employee
+              <MDBIcon fas icon="user-plus" className="me-2" />   Register Employee
               </MDBTabsLink>
             </MDBTabsItem>
             

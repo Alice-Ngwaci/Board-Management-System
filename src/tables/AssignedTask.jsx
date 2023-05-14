@@ -4,7 +4,6 @@ import ReactLoading from "react-loading";
 import {
 
   MDBIcon,
-
   MDBContainer,
   MDBCard,
   MDBCardBody,
@@ -17,7 +16,7 @@ import {
   MDBBadge,
   MDBBtn,
 
-  } from 'mdb-react-ui-kit';
+} from 'mdb-react-ui-kit';
   
   //Profile 
 
@@ -40,8 +39,6 @@ import { auth, db } from '../firebase/firebaseConfig';
 import {
   collection,
   query,
-  onSnapshot,
-  orderBy,
   where,
   getDocs
  
@@ -51,11 +48,11 @@ import {
 
 import Alert from '../components/alert';
 
-export default function AssignedTask({id}) {
+export default function AssignedTask({assignedTask}) {
 
   //Global Context
 
-  const { task,  clearCart  } = useGlobalContext()
+  const { task, remove } = useGlobalContext()
 
      //alerts
 
@@ -74,26 +71,25 @@ export default function AssignedTask({id}) {
 
   const [loading, setLoading] = useState(false);
 
+  const [selectedUserId, setSelectedUserId] = useState(null)
+
+  console.log(selectedUserId)
+
   const handleClick = () => {
 
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
+      
     }, 5000);
 
-    setTimeout( showAlert(true, 'success', 'info-circle', 'Task completed'), 2000)
+    setTimeout( showAlert(true, 'success', 'info-circle', 'Task completed'), 5000)
 
-    clearCart
-
-   
   }
 
-   
+  //user_data
 
-
-   //user_data
-
-   const [department, setDepartment] = useState([])
+  const [department, setDepartment] = useState([])
 
   useEffect(() => {
     const q = query(collection(db, 'user_data'),where('email','==',`${auth.currentUser.email}`))
@@ -229,7 +225,7 @@ export default function AssignedTask({id}) {
                   }}
                   rounded
                   size="sm"
-                  onClick={handleClick}
+                  onClick={() =>  {handleClick(); remove(tasks.id)}}
                  
                 >
                   Task

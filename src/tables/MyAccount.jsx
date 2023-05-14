@@ -1,4 +1,5 @@
 import React from 'react'
+import {QRCodeSVG} from 'qrcode.react';
 
 import { useState, useEffect } from 'react'
 
@@ -10,18 +11,13 @@ import {
   collection,
   query,
   onSnapshot,
-  orderBy,
   where,
  
 } from 'firebase/firestore'
 
 import {
-    MDBBtn,
     MDBCard,
     MDBCardBody,
-    MDBCardImage,
-    MDBCol,
-    MDBIcon,
     MDBTypography,
   
     } from "mdb-react-ui-kit";
@@ -73,9 +69,11 @@ export default function MyAccount() {
                     </MDBTypography>
                     <p className="small mt-2">{task.department}</p>
                 </div>
-
-                
                
+                </div>
+
+                <div className='mt-4' style={{marginRight: '20px'}}>
+                <QRCodeSVG value= {task.email} />
                 </div>
 
                 

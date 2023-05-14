@@ -51,7 +51,7 @@ export default function Account() {
                   onClick={() => handleIconsClick('tab1')}
                   active={iconsActive === 'tab1'}
                 >
-                  <MDBIcon fas icon="folder-open" className="me-2" /> Tasks
+                  <MDBIcon fas icon="folder" className="me-2" /> Tasks
                 </MDBTabsLink>
               </MDBTabsItem>
               
@@ -72,7 +72,7 @@ export default function Account() {
                   }}
                   active={iconsActive === 'tab3'}
                 >
-                  <MDBIcon fas icon="cloud-upload-alt" className="me-2" />{' '}
+                  <MDBIcon fas icon="chart-pie" className="me-2" />{' '}
                   Charts and Analytics
                 </MDBTabsLink>
               </MDBTabsItem>
