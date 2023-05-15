@@ -55,7 +55,7 @@ function Login() {
       <MDBCard>
         <MDBRow className='g-0'>
 
-          <MDBCol md='6'>
+          <MDBCol md='6' style={{padding: '10px'}}>
             <MDBCardImage   src={background} alt="login form" className='rounded-start h-100 '/>
           </MDBCol>
 
@@ -66,10 +66,10 @@ function Login() {
 
               <div className='d-flex flex-row mt-3 '>
                 <MDBIcon fas icon="cubes fa-3x me-3" style={{ color: '#ff6219' }}/>
-                <span className="h5 fw-bold mt-3 ml-5">MHASIBU SACCO</span>
+                <span className="h5 fw-bold mt-3 ml-3">MHASIBU SACCO</span>
               </div>
 
-              <h5 className="fw-normal my-4 pb-3 " style={{letterSpacing: '1px'}}>Sign into your account</h5>
+              <h5 className="fw-normal my-4 pb-3  " style={{letterSpacing: '1px', marginLeft: '150px'}}>Sign into your account</h5>
 
                 <MDBInput wrapperClass='mb-4' label='Email' id='formControlLg' type='email' size="lg"
                 style={{height: 50}}
