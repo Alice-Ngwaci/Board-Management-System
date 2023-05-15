@@ -1,10 +1,4 @@
 export const people = [{
-  id: 0,
-  name: 'Peter Karanja',
-  email: 'peter@gmail.com',
-  title: 'Loan Request',
-  details: 'Want to request $1000 to Increase my bussiness',
-}, {
   id: 1,
   name: 'Joseph Kambi',
   email: 'joseph@gmail.com',
@@ -34,10 +28,38 @@ export const people = [{
  
 }, {
   id: 5,
+  name: 'Wechakhulia Fred',
+  email: 'fred@gmail.com',
+  title: 'Increament Salary',
+  details: 'Worked for so long need a raise',
+ 
+}, {
+  id: 6,
+  name: 'Designs Centre',
+  email: 'design@gmail.com',
+  title: 'Furniture supply',
+  details: 'Your order #3391x is ready for delivery',
+  
+}, {
+  id: 7,
+  name: 'Musa Kim',
+  email: 'musa@gmail.com',
+  title: 'Quality service',
+  details: 'Thank you for quality service thumbs up',
+ 
+}, {
+  id: 8,
+  name: 'Micheal Ochieng',
+  email: 'ochieng@gmail.com',
+  title: 'Loan Request',
+  details: 'Loan request of $500 i have reviewed payment plan',
+ 
+}, {
+  id: 9,
   name: 'Skype Wifi',
   email: 'skype@gmail.com',
   title: 'Internet',
-  details: 'Monthly subscription about to expire renew package',
+  details: 'Upgrade to a larger package',
  
 }];
 

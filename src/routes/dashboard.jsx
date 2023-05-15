@@ -1,7 +1,7 @@
 import { Article} from '@/components/article'
 import { Layout } from '@/components/layout'
 import React, { useState } from 'react';
-import picture from '../assets/images/empty1.png'
+import picture from '../assets/images/favicon.svg'
 
 //Calendar
 // import { LocalizationProvider } from '@mui/x-date-pickers';
@@ -29,7 +29,8 @@ import Meeting from '../tables/Meeting'
 import Employee from '../tables/Employee'
 import Chart from '../tables/Chart';
 
-import placeholder from  '../assets/images/placeholder.png'
+import background from  '../assets/images/background.jpg'
+
 
 // const [currentTime, setCurrentTime] = useState(new Date());
 
@@ -58,6 +59,7 @@ export default function Account() {
               padding: 50,
               width: 1500,
               marginLeft: 100,
+              backgroundImage: `url(${background})` 
             }}
           >
 
@@ -65,7 +67,7 @@ export default function Account() {
           
         <MDBRow>
         <MDBCol size='3'>
-        <MDBCard  style={{width: '260px', marginLeft: '-30px'}}>
+        <MDBCard  style={{width: '260px', marginLeft: '-30px', marginTop: '-15px'}}>
         <MDBCardBody>
           <div className='flex-row'>
           <img
@@ -81,7 +83,7 @@ export default function Account() {
            <p style={{marginTop: '-30px'}}> Admin</p></div>
 
           
-          <MDBTabs className='flex-column text-center mt-5' style={{marginLeft: '-10px'}}>
+          <MDBTabs className='flex-column text-center mt-5 mb-5' style={{marginLeft: '-10px'}}>
           
             <MDBTabsItem>
            
@@ -106,6 +108,19 @@ export default function Account() {
             </MDBTabsItem>
             
           </MDBTabs>
+
+          <img
+
+            src= {picture}
+            alt="Default user icon"
+            style={{
+
+                height: '150px',
+                width: '150px',
+                marginLeft: '25px'
+
+            }}
+            />
           
           </MDBCardBody>
           </MDBCard>

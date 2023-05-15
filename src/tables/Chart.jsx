@@ -271,26 +271,10 @@ class App extends Component {
             />
           </div>
 
-          <div className="col radial-chart">
-            <Chart
-              options={this.state.optionsRadial}
-              series={this.state.seriesRadial}
-              type="radialBar"
-              width="280"
-            />
-          </div>
         </div>
 
         <div className="row">
-          <div className="col percentage-chart">
-            <Chart
-              options={this.state.optionsBar}
-              height={140}
-              series={this.state.seriesBar}
-              type="bar"
-              width={500}
-            />
-          </div>
+         
 
           <p className="col" style={{marginLeft: '70%'}}>
             <MDBBtn onClick={this.updateCharts}>Update</MDBBtn>

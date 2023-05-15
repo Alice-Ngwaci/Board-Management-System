@@ -70,7 +70,7 @@ function Meet() {
   return (
     <MDBContainer className="my-1" width="100px">
       
-      <MDBCard style={{width: '500px', marginLeft: '150px'}}>
+      <MDBCard style={{width: '450px', marginTop: '-20px'}}>
      
             <MDBCardBody className='d-flex flex-column' style={{padding: '50px'}}>
 

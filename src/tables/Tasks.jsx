@@ -54,7 +54,7 @@ export default function Tasks() {
      
     //Global Context
 
-    const { assignTask } = useGlobalContext()
+    const { assignTask, remove } = useGlobalContext()
 
     //Modal
     
@@ -72,6 +72,8 @@ export default function Tasks() {
     const [selectedTitle, setSelectedTitle] = useState(null)
     const [selectedDetails, setSelectedDetails] = useState(null)
     const [selectedUserId, setSelectedUserId] = useState(null)
+
+    console.log(selectedUserId);
   
 
     const handleRowClick = (people) => {
@@ -123,26 +125,39 @@ export default function Tasks() {
 
       <MDBContainer className="my-1" width="100px" >
       
-      <MDBCard style={{width: '600px', marginLeft: '50px'}}>
+      <MDBCard style={{width: '670px', marginTop: '-20px'}}>
      
             <MDBCardBody>
 
             <div className='d-flex flex-row mt-1 mb-3' style={{fontSize: 10}}>
                 <MDBIcon fas icon="cubes fa-3x me-3" style={{ color: '#ff6219' }}/>
                 <span className="p fw-bold mt-2">MHASIBU SACCO</span>
-              </div>
+            </div>
 
-              {people.map((person) => (
+            {!people.length > 0 ? (
+              <>
+              
+              <div><img src={empty} style={{marginLeft: '20%'}} width="500px"/> No Tasks</div>
+
+              </>
+
+              ):(
+              <>
+
+             {people.map((person) => (
               <>
   
-                <MDBIcon  fas icon="folder" className="me-5 mt-3  " key = {person.id} size="2x" style={{cursor: 'pointer'}}  onClick={() => handleRowClick(person)}>
+                <MDBIcon  fas icon="folder" className="me-5 mt-3  ml-5 " key = {person.id} size="2x" style={{cursor: 'pointer', marginLeft: '20px'}}  onClick={() => handleRowClick(person)}>
                 <p>{person.id}</p>_______
                 </MDBIcon>
   
               </>
               ))}
 
-            <h5 className="fw-normal my-4 pb-3 mt-3 " style={{letterSpacing: '1px'}}></h5>
+              <h5 className="fw-normal my-4 pb-3 mt-3 " style={{letterSpacing: '1px'}}></h5>
+
+              </>
+              )}
 
             </MDBCardBody>
 
@@ -221,7 +236,7 @@ export default function Tasks() {
                 size="lg"
                 style={{ fontWeight: 'bold', width: '60%' }}
                 onClick={() => {
-                  Start()
+                  { Start(); remove(selectedItem.id)}
                 }}
               >
                 Assign Task

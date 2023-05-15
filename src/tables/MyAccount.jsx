@@ -76,8 +76,6 @@ export default function MyAccount() {
                 <QRCodeSVG value= {task.email} />
                 </div>
 
-                
-                
             </div>
             </MDBCardBody>
             </MDBCard>
