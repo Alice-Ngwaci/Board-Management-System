@@ -18,10 +18,10 @@ export function Header({ title }: { title?: string }) {
           </h3>
           
           <h5 className="m-0 ml-5 text-xl font-bold uppercase leading-none " 
-          style={{zIndex: 1000,backgroundColor: '#303030', padding: 15, color: "#fff", borderRadius: 4, width: '10%'}}>
+          style={{zIndex: 1000,backgroundColor: '#303030', padding: 15, color: "#fff", borderRadius: 4, width: '12%'}}>
             
             <Link to="/login" className="flex items-center no-underline text-white" style={{fontSize: 15}}>
-            <MDBIcon fas icon="sign-in-alt" className="me-2" />  Login 
+            <MDBIcon fas icon="sign-in-alt" className="me-2 ml-4" />  Login 
             </Link>
           </h5>
         </div>

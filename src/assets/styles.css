@@ -1237,6 +1237,9 @@ select {
 .mt-8 {
   margin-top: 2rem;
 }
+.ml-3 {
+  margin-left: 0.75rem;
+}
 .flex {
   display: flex;
 }

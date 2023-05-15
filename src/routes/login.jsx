@@ -20,6 +20,8 @@ import { useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword} from 'firebase/auth';
 import { auth } from '../firebase/firebaseConfig';
 
+import background from  '../assets/images/background.jpg'
+
 
 
 function Login() {
@@ -53,8 +55,8 @@ function Login() {
       <MDBCard>
         <MDBRow className='g-0'>
 
-          <MDBCol md='6'style={{marginTop: -20}}>
-            <MDBCardImage   src='https://static-af.obs.af-south-1.myhuaweicloud.com/web/beescredit/logbook_intro.webp' alt="login form" className='rounded-start w-100 mt-5'/>
+          <MDBCol md='6'>
+            <MDBCardImage   src={background} alt="login form" className='rounded-start h-100 '/>
           </MDBCol>
 
          
