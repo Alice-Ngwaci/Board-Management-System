@@ -29,7 +29,7 @@ import Meeting from '../tables/Meeting'
 import Employee from '../tables/Employee'
 import Chart from '../tables/Chart';
 
-import background from  '../assets/images/background.jpg'
+import background from  '../assets/images/background1.jpg'
 
 
 // const [currentTime, setCurrentTime] = useState(new Date());
