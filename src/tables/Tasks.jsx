@@ -131,7 +131,8 @@ export default function Tasks() {
 
             <div className='d-flex flex-row mt-1 mb-3' style={{fontSize: 10}}>
                 <MDBIcon fas icon="cubes fa-3x me-3" style={{ color: '#ff6219' }}/>
-                <span className="p fw-bold mt-2">MHASIBU SACCO</span>
+                <span className="p fw-bold mt-2">MHASIBU SACCO FILES</span>
+               
             </div>
 
             {!people.length > 0 ? (
@@ -143,19 +144,27 @@ export default function Tasks() {
 
               ):(
               <>
-
+              
+              <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', alignItems: "space-around", marginLeft: '60px'}}>
+              
              {people.map((person) => (
               <>
-  
-                <MDBIcon  fas icon="folder" className="me-5 mt-3  ml-5 " key = {person.id} size="2x" style={{cursor: 'pointer', marginLeft: '20px'}}  onClick={() => handleRowClick(person)}>
-                <p>{person.id}</p>_______
+              
+                <MDBCard className='ml-5 mr-5 mt-3'  style={{width: '140px', height: '140px', cursor: 'pointer'}}  key = {person.id} onClick={() => handleRowClick(person)}>
+                <MDBCardBody>
+                <MDBIcon  fas icon="folder" className="text-center text-warning" key = {person.id} size="2x" >
+                <p>{person.id}</p>
                 </MDBIcon>
-  
+                </MDBCardBody>
+                </MDBCard>
+
+                
               </>
               ))}
 
-              <h5 className="fw-normal my-4 pb-3 mt-3 " style={{letterSpacing: '1px'}}></h5>
-
+              </div>
+              <h5 className="fw-normal mt-5 pb-3  mb-3" style={{letterSpacing: '1px'}}>&copy; Sacco Files</h5>
+  
               </>
               )}
 

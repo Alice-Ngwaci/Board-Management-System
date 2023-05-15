@@ -61,6 +61,27 @@ export const people = [{
   title: 'Internet',
   details: 'Upgrade to a larger package',
  
+}, {
+  id: 10,
+  name: 'Teresia Wangeci',
+  email: 'teresia@yahoo.com',
+  title: 'Job Application',
+  details: 'Requesting for any available vacancies',
+ 
+}, {
+  id: 11,
+  name: 'County Government',
+  email: 'county@gmail.com',
+  title: 'Best Award',
+  details: 'Congragulation for the being the best institution',
+ 
+}, {
+  id: 12,
+  name: 'Kevin Wafula',
+  email: 'kevin@gmail.com',
+  title: 'Employee of the Month',
+  details: 'You will have salary increase from 5 bob to one million',
+ 
 }];
 
 
