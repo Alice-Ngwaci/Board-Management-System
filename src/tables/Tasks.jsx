@@ -145,14 +145,14 @@ export default function Tasks() {
               ):(
               <>
               
-              <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', alignItems: "space-around", marginLeft: '60px'}}>
+              <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', alignItems: "space-around", marginLeft: '20px'}}>
               
              {people.map((person) => (
               <>
               
-                <MDBCard className='ml-5 mr-5 mt-3'  style={{width: '140px', height: '140px', cursor: 'pointer'}}  key = {person.id} onClick={() => handleRowClick(person)}>
+                <MDBCard className='ml-5 mr-5 mt-3'  style={{width: '120px', height: '120px', cursor: 'pointer'}}  key = {person.id} onClick={() => handleRowClick(person)}>
                 <MDBCardBody>
-                <MDBIcon  fas icon="folder" className="text-center text-warning" key = {person.id} size="2x" >
+                <MDBIcon  fas icon="folder" className="text-center text-success" key = {person.id} size="2x" >
                 <p>{person.id}</p>
                 </MDBIcon>
                 </MDBCardBody>
