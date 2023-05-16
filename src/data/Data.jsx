@@ -77,7 +77,7 @@ export const people = [{
  
 }, {
   id: 12,
-  name: 'Kevin Wafula',
+  name: 'Kevin Chela',
   email: 'kevin@gmail.com',
   title: 'Employee of the Month',
   details: 'You will have salary increase from 5 bob to one million',
