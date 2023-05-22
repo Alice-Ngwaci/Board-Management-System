@@ -27,7 +27,7 @@ import {
 import Tasks from '../tables/Tasks'
 import Meeting from '../tables/Meeting'
 import Employee from '../tables/Employee'
-import Chart from '../tables/Chart';
+import Chart from '../tables/Chart1';
 
 import background from  '../assets/images/background1.jpg'
 

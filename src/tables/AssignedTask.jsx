@@ -115,18 +115,18 @@ export default function AssignedTask({assignedTask}) {
 
     {alert.show && <Alert {...alert} removeAlert={showAlert} />}
 
-    {loading && <div style={{position: 'absolute', zIndex: '1000', marginLeft: '35%', marginTop: '-300'}}><ReactLoading
+    {loading && <div className='text-center, alignItem: center' style={{position: 'absolute', zIndex: '1000'}}><ReactLoading
           type="spinningBubbles"
           color="#ADD8E6"
           height={100}
           width={50}
           
          
-        /><p className='text-info' style={{fontWeight: 'bold', marginTop: '-300', marginLeft: '-30%', fontSize: 10}}>Performing Task</p></div> }
+        /><p className='text-info' style={{fontWeight: 'bold', fontSize: 10}}>Performing Task</p></div> }
 
-      <MDBContainer className="my-1" width="100px" >
+      <MDBContainer style={{width: "900px"}}>
       
-      <MDBCard style={{width: '900px', marginTop: '50px'}}>
+      <MDBCard >
      
             <MDBCardBody>
 
@@ -202,7 +202,7 @@ export default function AssignedTask({assignedTask}) {
 
             {tasks.department === "Human Resource" ? (
             <>
-             <MDBBadge color="danger" pill>
+             <MDBBadge color="info" pill>
                 {tasks.department}
              </MDBBadge>
             </>

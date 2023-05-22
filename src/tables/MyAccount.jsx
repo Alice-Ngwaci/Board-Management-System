@@ -44,7 +44,7 @@ export default function MyAccount() {
 
   })
   return (
-    <div>
+    <div style={{width: '900px', marginTop: '20px', paddingRight: '20px'}}>
          {notification.map((task) => (
 
             <MDBCard className="mt-5">

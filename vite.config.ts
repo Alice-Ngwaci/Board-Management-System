@@ -8,6 +8,11 @@ export default defineConfig({
   base: '/holly-react/',
   build: {
     outDir: '../dist',
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, './src/index.html')
+      }
+    }
   },
   resolve: {
     alias: {

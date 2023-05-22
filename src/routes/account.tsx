@@ -39,13 +39,15 @@ export default function Account() {
               borderRadius: 8,
               boxShadow:
                 '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.29) ',
-              padding: 50,
-              width: 1500,
-              marginLeft: 100,
+              padding: 40,
+              overflow: 'scroll',
+              marginBottom: '40px'
+             
+              
             }}
           >
           
-          <MDBTabs className="ml- -2 mb-3">
+          <MDBTabs className=" mb-5">
               <MDBTabsItem>
                 <MDBTabsLink
                   onClick={() => handleIconsClick('tab1')}
@@ -55,15 +57,20 @@ export default function Account() {
                 </MDBTabsLink>
               </MDBTabsItem>
               
+             
               <MDBTabsItem>
                 <MDBTabsLink
-                  onClick={() => handleIconsClick('tab2')}
+                  onClick={() => {
+                    handleIconsClick('tab2')
+                 
+                  }}
                   active={iconsActive === 'tab2'}
                 >
-                  <MDBIcon fas icon="paper-plane" className="me-2" /> Meetings & Notifications
-                  
+                  <MDBIcon fas icon="paper-plane" className="me-2" />{' '}
+                  Notifications
                 </MDBTabsLink>
               </MDBTabsItem>
+
               <MDBTabsItem>
                 <MDBTabsLink
                   onClick={() => {
@@ -90,13 +97,9 @@ export default function Account() {
                 </MDBTabsLink>
               </MDBTabsItem>
 
-              <div className='d-flex flex-row mt-1 mb-3' style={{fontSize: 10, marginLeft: 30}}>
-                <MDBIcon fas icon="cubes fa-3x me-3" style={{ color: '#ff6219' }}/>
-                <span className="p fw-bold mt-2">MHASIBU SACCO</span>
-              </div>
             </MDBTabs>
 
-            <MDBTabsContent style={{ backgroundColor: 'white' }}>
+            <MDBTabsContent className="mb-4" style={{ backgroundColor: 'white'}}>
               <MDBTabsPane show={iconsActive === 'tab1'}>
                
               <AssignedTask/>
@@ -105,21 +108,13 @@ export default function Account() {
 
               <MDBTabsPane show={iconsActive === 'tab2'}>
 
-              <div style={{marginTop: 70}}>
-
               <Notification/>
-
-              </div>
 
               </MDBTabsPane>
 
               <MDBTabsPane show={iconsActive === 'tab3'}>
 
-              <div style={{marginTop: 70, marginLeft: 120}}>
-
               <Chart />
-
-              </div>
 
               </MDBTabsPane>
 

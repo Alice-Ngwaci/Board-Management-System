@@ -249,7 +249,7 @@ class App extends Component {
 
     return (
 
-    <MDBContainer className="my-1" style={{width: '900px', marginTop: '20px', paddingRight: '50px'}} >
+    <MDBContainer className="my-1" style={{width: '730px', paddingRight: '50px'}} >
       
     <MDBCard>
    
@@ -274,7 +274,7 @@ class App extends Component {
         </div>
 
         <div className="row">
-          <p className="col" style={{marginLeft: '80%'}}>
+          <p className="col" style={{marginLeft: '70%'}}>
             <MDBBtn onClick={this.updateCharts}>Update</MDBBtn>
           </p>
         </div>

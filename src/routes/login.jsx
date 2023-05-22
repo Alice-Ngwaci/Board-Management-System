@@ -69,7 +69,7 @@ function Login() {
                 <span className="h5 fw-bold mt-3 ml-3">MHASIBU SACCO</span>
               </div>
 
-              <h5 className="fw-normal my-4 pb-3  " style={{letterSpacing: '1px', marginLeft: '150px'}}>Sign into your account</h5>
+              <h5 className="fw-normal my-4 pb-3  text-center" style={{letterSpacing: '1px'}}>Sign into your account</h5>
 
                 <MDBInput wrapperClass='mb-4' label='Email' id='formControlLg' type='email' size="lg"
                 style={{height: 50}}

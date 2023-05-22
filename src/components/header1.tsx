@@ -8,22 +8,22 @@ import {
 
 export function Header({ title }: { title?: string }) {
   return (
-    <header className="relative py-6">
-      <div className="mx-auto w-full max-w-6xl px-6">
+    <header className="relative">
+      <div className="mx-auto w-full max-w-6xl ">
         <div className="relative flex items-center justify-between">
-          <h3 className="m-0 text-xl font-bold uppercase leading-none" >
+         <h3 className=" mt-5 m-0 text-xl font-bold uppercase leading-none" >
             <Link to="/" className="flex items-center no-underline" style={{color: '#303030'}}>
               <Logo className="mr-3" /> MHASIBU SACCO
             </Link>
           </h3>
-          
-          <h5 className="m-0 ml-5 text-xl font-bold uppercase leading-none " 
-          style={{zIndex: 1000,backgroundColor: '#303030', padding: 15, color: "#fff", borderRadius: 4, width: '12%'}}>
-            
-            <Link to="/login" className="flex items-center no-underline text-white" style={{fontSize: 15}}>
-            <MDBIcon fas icon="sign-in-alt" className="me-2 ml-4" />  Login 
+
+          <h3 className=" mt-4 m-0 text-xl font-bold leading-none" >
+            <Link to="/login" className="flex items-center no-underline bg-dark w-full p-3 sm " style={{color: '#ffff', fontSize: '15px', width: '100px', borderRadius: '8px'}}>
+            <MDBIcon fas icon='sign-in-alt'  className='mr-2' /> Login
             </Link>
-          </h5>
+          </h3>
+          
+         
         </div>
       </div>
     </header>

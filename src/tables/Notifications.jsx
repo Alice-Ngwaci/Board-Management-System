@@ -72,10 +72,10 @@ export default function Notifications() {
 
   })
   return (
-    <div>
+    <div style={{width: "900px", paddingRight: '30px'}}>
          {notification.map((task) => (
 
-            <MDBCard className="mt-3">
+            <MDBCard className="mt-3 mr-5">
             <MDBCardBody>
             <div className="d-flex justify-content-between">
                 <div className="d-flex flex-row align-items-center">
@@ -109,7 +109,7 @@ export default function Notifications() {
 
         {notify.map((task) => (
 
-        <MDBCard className="mt-3">
+        <MDBCard className="mt-3 mr-5" style={{marginRight: '20px'}}>
         <MDBCardBody>
         <div className="d-flex justify-content-between">
             <div className="d-flex flex-row align-items-center">
@@ -125,7 +125,7 @@ export default function Notifications() {
                 }}
                 />
             </div>
-            <div className="ms-5">
+            <div className="ms-5" style={{marginRight: '20px'}}>
                 <MDBTypography tag="h5">
                 {task.email}
                 </MDBTypography>
