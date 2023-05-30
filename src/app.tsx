@@ -43,6 +43,7 @@ export default function App() {
   useGlobalContext()
 
   return (
+    
     <BrowserRouter basename={basename}>
       <ScrollToTop>
         <Routes>
