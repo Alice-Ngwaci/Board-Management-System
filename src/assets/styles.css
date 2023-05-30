@@ -1175,10 +1175,6 @@ select {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -1365,12 +1361,6 @@ select {
 }
 .to-secondary-400 {
   --tw-gradient-to: #fb7185 var(--tw-gradient-to-position);
-}
-.p-2 {
-  padding: 0.5rem;
-}
-.p-2\.5 {
-  padding: 0.625rem;
 }
 .p-3 {
   padding: 0.75rem;

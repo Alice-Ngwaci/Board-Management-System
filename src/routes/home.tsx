@@ -30,7 +30,7 @@ export default function HomePage() {
         </MDBCol>
  
         <MDBCol md='6' style={{padding: '10px', zIndex: '100'}}>
-          <MDBCardImage   src={app} alt="" className='rounded-start h-90 ml-5'/>
+          <MDBCardImage   src={app} alt="" style={{marginLeft: '100px'}} className='rounded-start h-90 ml-5'/>
         </MDBCol>
 
       </MDBRow>
