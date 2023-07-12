@@ -48,24 +48,15 @@ export default function App() {
       <ScrollToTop>
         <Routes>
        
-        {!user ? (
-
-        <>
+      
         
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
-         
-        </>
-
-        ):(
-
-        <>
+    
 
         <Route path="account" element={<AccountPage />} />
         <Route path="dashboard" element={<DashboardPage />} />
 
-        </>
-        )}
 
         <Route path="*" element={<Login />} />
           

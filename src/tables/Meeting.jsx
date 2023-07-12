@@ -21,7 +21,7 @@ import {collection, addDoc, Timestamp} from 'firebase/firestore';
 
 //Admin
 
-function Meet() {
+export default function Meet() {
 
    //alerts
 
@@ -108,5 +108,3 @@ function Meet() {
     </MDBContainer>
   );
 }
-
-export default Meet;

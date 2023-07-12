@@ -48,7 +48,7 @@ import {
 
 import Alert from '../components/alert';
 
-export default function AssignedTask({assignedTask}) {
+export default function AssignedTask() {
 
   //Global Context
 
@@ -226,7 +226,6 @@ export default function AssignedTask({assignedTask}) {
                   rounded
                   size="sm"
                   onClick={() =>  {handleClick(); remove(tasks.id)}}
-                 
                 >
                   Task
                 </MDBBtn>
@@ -236,14 +235,12 @@ export default function AssignedTask({assignedTask}) {
 
            </> 
         ))}
-        
-        
+              
         </MDBTableBody>
         </MDBTable>
         </>
 
     )}
-
 
     </MDBCardBody>
 

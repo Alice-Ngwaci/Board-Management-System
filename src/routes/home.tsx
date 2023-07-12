@@ -24,7 +24,7 @@ export default function HomePage() {
 
         <Hero
         title ="MicroFinance"
-        content="Our landing page template works for all the devices, so you only have to setup it once, and get beautiful results forever."
+        content="Leading workforce in 2023."
         />
 
         </MDBCol>

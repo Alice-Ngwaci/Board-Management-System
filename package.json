@@ -24,9 +24,9 @@
     "format": "prettier --write .",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
     "lint:fix": "eslint . --fix",
-    "predeploy": "$npm_execpath run build",
+    "predeploy": "npm run build",
     "preview": "vite preview",
-    "start": "$npm_execpath run dev",
+    "start": "npm run dev",
     "typecheck": "tsc --noEmit",
     "validate": "run-p lint typecheck"
   },

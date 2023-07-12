@@ -24,7 +24,7 @@ import background from  '../assets/images/background.jpg'
 
 
 
-function Login() {
+export default function Login(){
 
   const [email, setEmail] = useState('admin@gmail.com');
   const [password, setPassword] = useState('123456');
@@ -93,5 +93,3 @@ function Login() {
     </MDBContainer>
   );
 }
-
-export default Login;

@@ -43,7 +43,7 @@ import { auth, db } from '../firebase/firebaseConfig';
 import {collection, addDoc, Timestamp} from 'firebase/firestore';
 
 
-function Employee() {
+export default function Employee() {
 
   //Global Context
 
@@ -372,4 +372,3 @@ function Employee() {
   );
 }
 
-export default Employee;
